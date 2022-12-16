@@ -112,6 +112,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RemoveItem_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RemoveItem_UC.Designer.cs">
+      <DependentUpon>RemoveItem_UC.cs</DependentUpon>
+    </Compile>
     <Compile Include="updateitems_UC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -139,6 +145,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RemoveItem_UC.resx">
+      <DependentUpon>RemoveItem_UC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="updateitems_UC.resx">
       <DependentUpon>updateitems_UC.cs</DependentUpon>
     </EmbeddedResource>

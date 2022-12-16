@@ -40,9 +40,10 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.updateitems_UC1 = new RestaurantBillingSystem.updateitems_UC();
             this.placeorder_uc1 = new RestaurantBillingSystem.placeorder_uc();
             this.addItems_UC11 = new RestaurantBillingSystem.addItems_UC1();
-            this.updateitems_UC1 = new RestaurantBillingSystem.updateitems_UC();
+            this.removeItem_UC1 = new RestaurantBillingSystem.RemoveItem_UC();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -98,6 +99,7 @@
             this.removeitembtn.TabIndex = 5;
             this.removeitembtn.Text = "Remove Items";
             this.removeitembtn.UseVisualStyleBackColor = true;
+            this.removeitembtn.Click += new System.EventHandler(this.removeitembtn_Click);
             // 
             // updateitembtn
             // 
@@ -143,6 +145,7 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.removeItem_UC1);
             this.panel3.Controls.Add(this.updateitems_UC1);
             this.panel3.Controls.Add(this.placeorder_uc1);
             this.panel3.Controls.Add(this.addItems_UC11);
@@ -175,6 +178,14 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // updateitems_UC1
+            // 
+            this.updateitems_UC1.BackColor = System.Drawing.Color.White;
+            this.updateitems_UC1.Location = new System.Drawing.Point(-2, 0);
+            this.updateitems_UC1.Name = "updateitems_UC1";
+            this.updateitems_UC1.Size = new System.Drawing.Size(781, 514);
+            this.updateitems_UC1.TabIndex = 4;
+            // 
             // placeorder_uc1
             // 
             this.placeorder_uc1.BackColor = System.Drawing.Color.White;
@@ -191,13 +202,13 @@
             this.addItems_UC11.Size = new System.Drawing.Size(781, 514);
             this.addItems_UC11.TabIndex = 2;
             // 
-            // updateitems_UC1
+            // removeItem_UC1
             // 
-            this.updateitems_UC1.BackColor = System.Drawing.Color.White;
-            this.updateitems_UC1.Location = new System.Drawing.Point(-2, 0);
-            this.updateitems_UC1.Name = "updateitems_UC1";
-            this.updateitems_UC1.Size = new System.Drawing.Size(781, 514);
-            this.updateitems_UC1.TabIndex = 4;
+            this.removeItem_UC1.BackColor = System.Drawing.Color.White;
+            this.removeItem_UC1.Location = new System.Drawing.Point(-1, 0);
+            this.removeItem_UC1.Name = "removeItem_UC1";
+            this.removeItem_UC1.Size = new System.Drawing.Size(781, 514);
+            this.removeItem_UC1.TabIndex = 5;
             // 
             // Homepage
             // 
@@ -237,5 +248,6 @@
         private addItems_UC1 addItems_UC11;
         private placeorder_uc placeorder_uc1;
         private updateitems_UC updateitems_UC1;
+        private RemoveItem_UC removeItem_UC1;
     }
 }

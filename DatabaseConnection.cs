@@ -43,7 +43,7 @@ namespace RestaurantBillingSystem
             comm.ExecuteNonQuery();
             obj.Close();
 
-            MessageBox.Show("Item added", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Success", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
         
         }
 

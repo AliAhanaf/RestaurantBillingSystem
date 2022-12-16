@@ -34,6 +34,7 @@ namespace RestaurantBillingSystem
             addItems_UC11.Visible = false;
             placeorder_uc1.Visible = false;
             updateitems_UC1.Visible = false;
+            removeItem_UC1.Visible = false;
         }
 
         private void additembtn_Click(object sender, EventArgs e)
@@ -53,6 +54,12 @@ namespace RestaurantBillingSystem
         {
             updateitems_UC1.Visible = true;
             updateitems_UC1.BringToFront();
+        }
+
+        private void removeitembtn_Click(object sender, EventArgs e)
+        {
+            removeItem_UC1.Visible = true;
+            removeItem_UC1.BringToFront();
         }
     }
 }

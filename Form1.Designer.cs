@@ -35,6 +35,7 @@
             this.loginbtn = new System.Windows.Forms.Button();
             this.Passbox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.exitbtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -42,7 +43,7 @@
             // 
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(55, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(57, 29);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(188, 168);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -58,7 +59,6 @@
             this.label1.Size = new System.Drawing.Size(56, 21);
             this.label1.TabIndex = 1;
             this.label1.Text = "Name";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // namebox
             // 
@@ -67,7 +67,6 @@
             this.namebox.Name = "namebox";
             this.namebox.Size = new System.Drawing.Size(204, 29);
             this.namebox.TabIndex = 2;
-            this.namebox.TextChanged += new System.EventHandler(this.namebox_TextChanged);
             // 
             // loginbtn
             // 
@@ -99,7 +98,16 @@
             this.label2.Size = new System.Drawing.Size(86, 21);
             this.label2.TabIndex = 5;
             this.label2.Text = "Password";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // exitbtn
+            // 
+            this.exitbtn.Location = new System.Drawing.Point(0, 1);
+            this.exitbtn.Name = "exitbtn";
+            this.exitbtn.Size = new System.Drawing.Size(19, 19);
+            this.exitbtn.TabIndex = 7;
+            this.exitbtn.Text = "X";
+            this.exitbtn.UseVisualStyleBackColor = true;
+            this.exitbtn.Click += new System.EventHandler(this.exitbtn_Click);
             // 
             // Form1
             // 
@@ -107,6 +115,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(304, 461);
+            this.Controls.Add(this.exitbtn);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Passbox);
             this.Controls.Add(this.loginbtn);
@@ -131,6 +140,7 @@
         private System.Windows.Forms.Button loginbtn;
         private System.Windows.Forms.TextBox Passbox;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button exitbtn;
     }
 }
 

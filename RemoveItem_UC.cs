@@ -47,12 +47,11 @@ namespace RestaurantBillingSystem
             {
                 query = "Delete from items where id = "+id+" ";
                 obj.datainsert(query);
-
-                query = "select * from items";
-                DataSet dset = obj.datafetch(query);
-                dataGridView1.DataSource = dset.Tables[0];
-
             }
+
+            query = "select * from items";
+            DataSet dset = obj.datafetch(query);
+            dataGridView1.DataSource = dset.Tables[0];
         }
 
 
